@@ -43,7 +43,6 @@ class ProductController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
-
     /**
      * Displays a single Product model.
      * @param integer $id

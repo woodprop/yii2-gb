@@ -20,14 +20,14 @@ class m170824_203145_create_user_table extends Migration
             'password_hash' => $this->string()->notNull(),
             'email' => $this->string(64)->notNull()->unique(),
         ]);
-
+// -------------------------------Test User ---------------------------------------------------------
             $user = new User();
             $user->username = 'admin';
             $user->email = 'admin@admin.admin';
             $user->setPassword('admin');
             $user->generateAuthKey();
             $user->save();
-
+// --------------------------------------------------------------------------------------------------
         }
 
     /**

@@ -15,7 +15,9 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function rules()
     {
-        //ToDo
+        return [
+            [['username', 'password_hash', 'email'], 'required'],
+        ];
     }
 
 
